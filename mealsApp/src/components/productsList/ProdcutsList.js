@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import { View, Text, FlatList } from "react-native";
 import styles from "./styles";
 import { ProductItem } from "..";
-import { DummyData } from "../../assets/contants";
 
-const ProdcutsList = () => {
+
+const ProdcutsList = (props) => {
   const [columns, setColumns] = useState(2);//for columns
+  const {data} = props
 
  
   return (
     <View style={styles.container}>
       <FlatList
       disableVirtualization={true}
-        data={DummyData}
+        data={data}
         renderItem={({ item }) => <ProductItem item={item} />}
         keyExtractor={(item) => item.id}
         numColumns={columns}
