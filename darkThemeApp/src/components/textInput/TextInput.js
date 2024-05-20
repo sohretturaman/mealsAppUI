@@ -3,12 +3,14 @@ import React from "react";
 import styles from "./styles";
 import { signIn } from "../../assets/icons";
 
-const TextInputComp = () => {
+const TextInputComp = (props) => {
+  const {leftHeader, rightHeader, middleHeader} = props;
   return (
     <View style={styles.container}>
         <View style={styles.buttonWrapper}>
         <Text style={styles.text}> The Duabi Mall </Text>
         </View>
+
         <View style={styles.inputWrapper}>
               <TextInput 
               placeholder="Enter Your Email"

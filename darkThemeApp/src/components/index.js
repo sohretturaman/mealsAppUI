@@ -1,9 +1,5 @@
 import BottomTab from './bottomTab/BottomTab';
-
-
 import TextButton from './textButton/TextButton';
-
-
 import ProdcutsList from './productsList/ProdcutsList';
 import ProductItem from './productItem/ProductItem';
 import ProductFooter from './productFooter/ProdcutFooter';
